@@ -1,1 +1,1 @@
-# es6ex
+# JavaScript ES6
