@@ -68,7 +68,48 @@
 //repeatStr('Hi, human!', 5);
 
 
+// 6. Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.
 
+//function getIndexToIns(arr, num) {
+//    arr.push(num);
+//    let sortedArr = arr.sort(function(a, b) {
+//        return a - b;
+//    })
+//    console.log(sortedArr);
+//    console.log(sortedArr.indexOf(num));
+//    
+//    
+//}
+//
+//getIndexToIns([70, 60], 50);
+
+
+// 7. Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.
+//
+//function mutation(arr) {
+//    let rgx = arr[1].toLowerCase();
+//    let str = arr[0].toLowerCase();
+//    for (let i = 0; i < rgx.length; i++) {
+//        if (str.indexOf(rgx[i]) < 0 )
+//            return console.log(false);
+//    }
+//    return console.log(true);
+//}
+//
+//mutation(["hello", "hey"]);
+
+// 8. Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.
+
+//function chunkArrayInGroups(arr, size) {
+//    let result = [];
+//    for (let i=0; i <arr.length; i+=size) {
+//        result.push(arr.slice(i, size+i));        
+//    }
+//    return console.log(result);
+//  
+//}
+//
+//chunkArrayInGroups(["a", "b", "c", "d"], 2);
 
 
 
