@@ -233,6 +233,52 @@
 
 
 
+// 10. Use the slice method in the sliceArray function to return part of the anim array given the provided beginSlice and endSlice indices. The function should return an array.
+
+//function sliceArray(anim, beginSlice, endSlice) {
+//  return anim.slice(beginSlice, endSlice);
+//}
+//var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+//sliceArray(inputAnim, 1, 3);
+
+
+// 11. Use the split method inside the splitify function to split str into an array of words. The function should return the array. Note that the words are not always separated by spaces, and the array should not contain punctuation.
+
+//function splitify(str) {
+//  console.log(str.split(/\W/));
+//}
+//splitify("Hello World,I-am code");
+
+// 12. Use the join method (among others) inside the sentensify function to make a sentence from the words in the string str. The function should return a string. For example, "I-like-Star-Wars" would be converted to "I like Star Wars". For this challenge, do not use the replace method.
+
+//
+//function sentensify(str) {
+//  return str.split(/\W/).join(' ');
+//}
+//sentensify("May-the-force-be-with-you");
+
+// 13. Fill in the urlSlug function so it converts a string title and returns the hyphenated version for the URL. You can use any of the methods covered in this section, and don't use replace. Here are the requirements:
+
+//The input is a string with spaces and title-cased words
+//
+//The output is a string with the spaces between words replaced by a hyphen (-)
+//
+//The output should be all lower-cased letters
+//
+//The output should not have any spaces
+                                                                           
+//let globalTitle = "Winter Is  Coming";
+//
+//// Add your code below this line
+//function urlSlug(title) {
+//  return title.toLowerCase().trim().split(/\s+/).join('-');
+//  
+//}
+//// Add your code above this line
+//
+//let winterComing = urlSlug(globalTitle); // Should be "winter-is-coming"
+//console.log(winterComing);
+
 
 
 
