@@ -454,13 +454,20 @@
 
 // 20. Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
 
-function spinalCase(str) {
-  return console.log(str.split(/\s|_|(?=[A-Z])/).join('-').toLowerCase());
-}
+//function spinalCase(str) {
+//  return console.log(str.split(/\s|_|(?=[A-Z])/).join('-').toLowerCase());
+//}
+//
+//spinalCase('This Is Spinal Tap');
 
-spinalCase('This Is Spinal Tap');
+// 21. Return true if the given string is a palindrome. Otherwise, return false.
 
-
+//function palindrome(str) {
+//  return str.replace(/[\W]/g, '').toLowerCase() === str.replace(/[\W]/g, '').toLowerCase().split('').reverse().join('');
+//    
+//}
+//
+//palindrome("eyes");
 
 
 
