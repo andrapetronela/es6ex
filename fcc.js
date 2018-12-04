@@ -405,6 +405,33 @@
 //let averageRating = movies / christopherMovies.length;
 
 
+// 16. Use the sort method in the alphabeticalOrder function to sort the elements of arr in alphabetical order.
+//
+//function alphabeticalOrder(arr) {
+//  return arr.sort();
+//}
+//alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
+
+
+// 17. Use the sort method in the nonMutatingSort function to sort the elements of an array in ascending order. The function should return a new array, and not mutate the globalArray variable.
+
+//var globalArray = [5, 6, 3, 2, 9];
+//function nonMutatingSort(arr) {
+//  // Add your code below this line
+//  let newArr = [];
+//  return newArr.concat(arr).sort();
+//  // Add your code above this line
+//}
+//console.log(nonMutatingSort(globalArray));
+
+
+
+
+
+
+
+
+
 
 
 
