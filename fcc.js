@@ -487,4 +487,62 @@
 //}
 //roman(11);
 
+// 23. Perform a search and replace on the sentence using the arguments provided and return the new sentence.
+
+
+//function myReplace(str, before, after) {
+//    let index = str.indexOf(before);
+//    if (str[index] === str[index].toUpperCase()) {
+//        after = after.charAt(0).toUpperCase() + after.slice(1);
+//    }
+//    let newStr = str.replace(before, after);
+//    console.log(newStr);   
+//}
+//
+//myReplace("A quick brown fox jumped over the lazy dog", "jumped", "ceaped");
+
+// 24. Write a function which takes a ROT13 encoded string as input and returns a decoded string.
+
+//function rot13(str) {
+//  let arrStr = str.split('');
+//  let result = [];
+//  let shifted = '';
+//  
+//    arrStr.map(item => {
+//        let index = item.charCodeAt(0);
+//        if (index < 65 || index > 90) {
+//          result.push(String.fromCharCode(index));
+//      }
+//        else if ( index < 78 ) {
+//          result.push(String.fromCharCode(index + 13));
+//      }  
+//        else {
+//          result.push(String.fromCharCode(index - 13));
+//      }
+//    })
+//    console.log(result.join(''));
+//    }
+//    
+//rot13("SERR CVMMN!");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
