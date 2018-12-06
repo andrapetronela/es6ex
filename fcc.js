@@ -674,7 +674,25 @@
 //
 //fearNotLetter("abce");
 
+// 28. Sorted union
 
+//function uniteUnique(arr) {
+//  let args = [].slice.call(arguments);
+//
+//  let bigUnion = args.reduce((acc, curr) => {
+//     return acc.concat(curr); 
+//  }, []);
+//    console.log(bigUnion);
+//    let result =[];
+//    bigUnion.map(item => {
+//        if (!result.includes(item)) {
+//            result.push(item);
+//        }
+//    });
+//    console.log(result);
+//}
+//
+//uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
 
 
