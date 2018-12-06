@@ -551,52 +551,65 @@
 //  { name: 'NICKEL', val: 0.05},
 //  { name: 'PENNY', val: 0.01}
 //];
+//    let result = { status: '', change: [] };
+//    let change = cash - price;  
 //    
-//  let result = { status: null, change: [] };
-//  let change = cash - price;
-//
-//  let currDrawer = cid.reduce(function(acc, curr) {
+//    let cidCopy = [];
+//    
+//    for (let i = 0; i < cid.length; i++) {
+//        for (let j = 0; j < cid[i].length; j++) {
+//            cidCopy.push(cid[i][j]);
+//        }
+//    }
+//     
+//    let copyArr = [];
+//    
+//    cid.map(item => copyArr.push(item[1]));
+//        
+//    let currCash = 0;
+//    copyArr.map(item => {
+//        currCash += item;
+//    });
+//       
+//    if (change === currCash) {
+//        result.status = 'CLOSED';
+//        result.change = cid;
+//        return console.log(result);
+//    } else if (change > currCash) {
+//        result.status = 'INSUFFICIENT_FUNDS';
+//        return console.log(result);
+//    }
+//    
+//    let moneyInDrawer = cid.reduce(function(acc, curr) {
 //    acc.total += curr[1];
 //    acc[curr[0]] = curr[1];
 //    return acc;
 //  }, { total: 0 });
 //
-//  if (currDrawer.total === change) {
-//    result.status = 'CLOSED';
-//    result.change = cid;
-//    return result;
-//  }
 //
-//  if (currDrawer.total < change) {
-//    result.status = 'INSUFFICIENT_FUNDS';
-//    return result;
-//  }
-//
-//  let change_arr = drawer.reduce(function(acc, curr) {
+//    let changeDue = drawer.reduce(function(acc, curr) {
 //    let value = 0;
-//    while (currDrawer[curr.name] > 0 && change >= curr.val) {
-//      change -= curr.val;
-//      currDrawer[curr.name] -= curr.val;
-//      value += curr.val;
+//        while (moneyInDrawer[curr.name] > 0 && change >= curr.val) {
+//          change -= curr.val;
+//          moneyInDrawer[curr.name] -= curr.val;
+//          value += curr.val;
 //
-//      change = Math.round(change * 100) / 100;
-//    }
-//    if (value > 0) {
-//        acc.push([ curr.name, value ]);
-//    }
-//    return acc; 
-//  }, []); 
+//          change = Math.round(change * 100) / 100;
+//        }
+//        if (value > 0) {
+//            acc.push([ curr.name, value ]);
+//        }
+//        return acc; 
+//      }, []); 
 //
-//  if (change_arr.length < 1 || change > 0) {
-//    result.status = 'INSUFFICIENT_FUNDS';
-//    return result;
-//  }
+//      if (changeDue.length < 1 || change > 0) {
+//        result.status = 'INSUFFICIENT_FUNDS';
+//        return console.log(result) ;
+//      }
 //
-//  result.status = 'OPEN';
-//  result.change = change_arr;
-//  console.log(result);
+//      result.status = 'OPEN';
+//      result.change = changeDue;
+//      return console.log(result);       
 //}
 //
-//checkCashRegister(19.50, 20.00, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.10], ["QUARTER", 4.25], ["ONE", 90.00], ["FIVE", 55.00], ["TEN", 20.00], ["TWENTY", 60.00], ["ONE HUNDRED", 100.00]]);
-//
-//
+//checkCashRegister(19.5, 20, [["PENNY", 0.01], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 1], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]);
