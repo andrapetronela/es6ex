@@ -656,3 +656,40 @@
 //
 //pairElement("ATCGA");
 
+// 27. Missing letters 
+
+//function fearNotLetter(str) {
+//    for (let i = 0; i < str.length; i++) {
+//        let charCode = str.charCodeAt(i);
+//        let missingLetter = str.charCodeAt(0) + i;
+//        console.log(missingLetter);
+//        console.log(charCode);
+//        if (missingLetter < charCode) {
+//            let result = String.fromCharCode(missingLetter);
+//            console.log(result);
+//        }
+//    }
+//  return undefined;
+//}
+//
+//fearNotLetter("abce");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
