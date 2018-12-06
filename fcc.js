@@ -613,3 +613,46 @@
 //}
 //
 //checkCashRegister(19.5, 20, [["PENNY", 0.01], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 1], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]);
+
+
+// 25. Where in object
+//
+//function whatIsInAName(collection, source) {
+//  // What's in a name?
+//  let arr = [];
+//  // Only change code below this line
+//  let keys = Object.keys(source);
+//  arr = collection.filter(item => {
+//     return keys.every(key => {
+//         return item.hasOwnProperty(key) && item[key] === source[key];
+//     })
+//  });
+//  // Only change code above this line
+//  console.log(arr);
+//}
+//
+//whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 });
+
+
+// 26. DNA Pairing 
+
+//let dna = {'A': 'T',
+//           'T': 'A',
+//           'C': 'G',
+//           'G': 'C',
+//          };
+//
+// function pairElement(str) {
+//     let arrStr = str.split('');
+//     let result = [];
+//     arrStr.map(item => {
+//        if (dna.hasOwnProperty(item)) {
+//            result.push([item, dna[item]]);
+//        }
+//    });
+//     console.log(result);
+//}
+//
+//
+//pairElement("ATCGA");
+
