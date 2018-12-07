@@ -596,7 +596,7 @@
 //
 //          change = Math.round(change * 100) / 100;
 //        }
-//        if (value > 0) {
+//        if (value > 0) { 
 //            acc.push([ curr.name, value ]);
 //        }
 //        return acc; 
@@ -695,7 +695,32 @@
 //uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
 
+// 29. Replace HTML entities 
 
+function convertHTML(str) {
+  let arr = str.split('');
+    console.log(arr);
+  let table = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "\'": '&apos;',
+  };
+  let keys = Object.keys(table);
+   arr.map(item => {
+        if (keys.includes(item)) {
+            let index = arr.indexOf(item);
+            console.log(index);
+            arr.splice(index, 1, table[item]);  
+            return arr;
+        }
+    });
+    let result = arr.join('');
+    console.log(result);
+}
+
+convertHTML('<>');
 
 
 
