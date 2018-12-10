@@ -697,30 +697,74 @@
 
 // 29. Replace HTML entities 
 
-function convertHTML(str) {
-  let arr = str.split('');
-    console.log(arr);
-  let table = {
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      '"': '&quot;',
-      "\'": '&apos;',
-  };
-  let keys = Object.keys(table);
-   arr.map(item => {
-        if (keys.includes(item)) {
-            let index = arr.indexOf(item);
-            console.log(index);
-            arr.splice(index, 1, table[item]);  
-            return arr;
-        }
-    });
-    let result = arr.join('');
-    console.log(result);
-}
+//function convertHTML(str) {
+//  let arr = str.split('');
+//    console.log(arr);
+//  let table = {
+//      '&': '&amp;',
+//      '<': '&lt;',
+//      '>': '&gt;',
+//      '"': '&quot;',
+//      "\'": '&apos;',
+//  };
+//  let keys = Object.keys(table);
+//   arr.map(item => {
+//        if (keys.includes(item)) {
+//            let index = arr.indexOf(item);
+//            console.log(index);
+//            arr.splice(index, 1, table[item]);  
+//            return arr;
+//        }
+//    });
+//    let result = arr.join('');
+//    console.log(result);
+//}
+//
+//convertHTML('<>');
 
-convertHTML('<>');
+
+// 30. Bob is preparing to pass IQ test. The most frequent task in this test is to find out which one of the given numbers differs from the others. Bob observed that one number usually differs from the others in evenness. Help Bob — to check his answers, he needs a program that among the given numbers finds one that is different in evenness, and return a position of this number.
+
+//! Keep in mind that your task is to help Bob solve a real IQ test, which means indexes of the elements start from 1 (not 0)
+//
+//function iqTest(numbers){
+//  let arr = numbers.split(' ');
+//  let numArr = arr.map(item => Number(item));
+//    
+//  let oddArr = [];
+//  let evenArr = [];
+//  let oddNumbers = numArr.map(item => {
+//      if (item % 2 === 0) {
+//          evenArr.push(item);
+//      } else {
+//          oddArr.push(item);
+//      }
+//  });
+//    
+//    if (oddArr.length > evenArr.length) {
+//        console.log(numArr.indexOf(evenArr[0] + 1));
+//    } else {
+//        console.log(numArr.indexOf(oddArr[0] + 1));
+//    }
+//}
+//
+//
+//iqTest("2 4 7 8 10");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
