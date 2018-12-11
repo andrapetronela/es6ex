@@ -751,6 +751,16 @@
 //
 //iqTest("2 4 7 8 10");
 
+// 31. remove an item, without mutating the array
+
+//let arr = [1, 2, 3];
+//let index = 1;
+//let newArr = [...arr.filter((item, idx) => {
+//    return idx !== index;
+//})];
+//console.log(newArr);
+
+
 
 
 
