@@ -18,18 +18,17 @@ const targetNumber = 4;
 
 // 2.
 
-//let bool;
-//
-//const linearSearch = () => {
-//    arr.forEach((item) => {
-//        console.log(item)
-//    if (targetNumber === item) {bool = true}
-//        else if (!arr.includes(targetNumber)) { bool = false}
-//})
-//    console.log(bool);
-//    
-//}
-//
-//linearSearch();
+let bool;
+
+const linearSearch = () => {
+    arr.forEach((item) => {
+    if (targetNumber === item) {bool = true}
+        else if (!arr.includes(targetNumber)) { bool = false}
+})
+    console.log(bool);
+    
+}
+
+linearSearch();
 
 
