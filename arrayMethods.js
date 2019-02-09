@@ -152,10 +152,101 @@ console.log(sortedArr); // ["bread", "butter", "cacao", "eggs", "lemon", "milk"]
 console.log('concat', concatArr);
 
 
+
+// sort in random order
+
+const randomOrder = numArr.sort((a, b) => 0.5 - Math.random());
+console.log('random', randomOrder);
+
+
+// sort object arrays
+
+const kids = [
+    { 
+        name: 'Ami',
+        year: 2016
+    },
+    {
+        name: 'Jane',
+        year: 2010
+    },
+    {
+        name: 'Mark',
+        year: 2011
+    }
+];
+
+const sortedKidsByYear = kids.sort((a, b) => a.year - b.year);
+console.log('sortedKidsByYear', sortedKidsByYear);
+
+
 // descending order ************ REVERSE ****************
 // !!!! changes the array in place == destructive
 const revArr = sortedArr.reverse();
 console.log(revArr); // ["milk", "lemon", "eggs", "cacao", "butter", "bread"]
 
 console.log(sortedArr); // ["milk", "lemon", "eggs", "cacao", "butter", "bread"]
+
+
+
+
+
+// ********************** ITERATION ******************
+
+
+
+
+// forEach
+
+const iterationFunct = () => {
+    sortedArr.forEach(i => {
+        console.log(`I am ${i} and I am at index ${sortedArr.indexOf(i)}`);
+    });
+}
+
+iterationFunct();
+
+
+
+
+
+// for 
+
+for (let i = 0; i < sortedArr.length; i++) {
+    console.log(`My name is ${sortedArr[i]} and I rock.`);
+}
+
+
+
+
+
+// map 
+
+const mapArr = sortedArr.map(item => item + ' yamy');
+console.log(mapArr); // ["milk yamy", "lemon yamy", "eggs yamy", "cacao yamy", "butter yamy", "bread yamy"]
+
+
+
+
+// filter 
+
+const filteredArr = numArr.filter(item => item > 3);
+console.log(filteredArr); // [8, 7, 5]
+
+
+
+// reduce 
+
+const reducedArr = numArr.reduce((acc, curr) => acc + curr);
+console.log(reducedArr); // 25
+
+
+
+// every 
+
+const checkAge = (age) => { return age > 2 }
+console.log(numArr.every(checkAge)); // false
+
+// some 
+console.log(numArr.some(checkAge)); // true
 
