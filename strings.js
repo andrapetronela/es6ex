@@ -128,3 +128,19 @@ console.log(letters.split('|')); // ["a, v, f, x, h"]
 console.log(letters.split('')[0]) // a
 
 
+fetch('https://jobs.github.com/positions.json?description=python&location=new+york')
+    .then(response => response.json())
+    .then(data => {    
+            data.map(i => {
+                const root = document.getElementById('root');
+                const item = document.createElement('div');
+                const location = document.createTextNode(i.location);
+                const breakLine = document.createElement('br');
+                const company = document.createTextNode(i.company);
+                
+                item.append(location);
+                item.append(breakLine);
+                item.append(company);
+                root.appendChild(item);
+            })
+    });
